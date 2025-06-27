@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #5a0404, #031e4e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.controls button {
+    margin: 0.3rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #010f1233;
+    color: rgb(241, 235, 235);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.controls button:hover {
+    background: #ffffff55;
+}
+
+.stats {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.game-board {
+    display: grid;
+    gap: 15px;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    color: #333;
+    font-size: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.card.flipped {
+    background: #f1c40f; }
+
+
+    #victory-message button {
+        margin-top: 12px;
+        padding: 10px 22px;
+        font-size: 1rem;
+        font-weight: 600;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        /* Purple to blue */
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    #victory-message button:hover {
+        background: linear-gradient(to right, #2575fc, #6a11cb);
+        transform: scale(1.06);
+    }
+    
+    #victory-message button:active {
+        transform: scale(0.98);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
